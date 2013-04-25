@@ -17,12 +17,11 @@ class MarkerAreaInfo(object):
 
     def calc_size(self):
         for i in range(4):
-            self.min_x = min(self.min_x, self.corner[i].x);
-            self.max_x = max(self.max_x, self.corner[i].x);
-            self.min_y = min(self.min_y, self.corner[i].y);
-            self.max_y = max(self.max_y, self.corner[i].y);
-        }
-    } 
+            self.min_x = min(self.min_x, self.corner[i].x)
+            self.max_x = max(self.max_x, self.corner[i].x)
+            self.min_y = min(self.min_y, self.corner[i].y)
+            self.max_y = max(self.max_y, self.corner[i].y)
+            
 class MarkerImg(object):
     def __init__(self, file_name):
         self.matching = 0.0
